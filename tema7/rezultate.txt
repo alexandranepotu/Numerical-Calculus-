@@ -1,0 +1,126 @@
+======================================================================
+  Tema 7 - Metoda Newton si Metoda Olver
+  Aproximarea radacinilor reale ale unui polinom
+  Schema lui Horner pentru evaluarea polinoamelor
+  Precizia epsilon = 1e-06
+======================================================================
+
+Polinom: P1(x) = (x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6
+Coeficienti: [1.0, -6.0, 11.0, -6.0]
+Radacini exacte: [1.0, 2.0, 3.0]
+Intervalul [-R, R] = [-12.000000, 12.000000]
+
+--- Metoda Newton ---
+  Radacina:   1.0000000000  |  Pasi: 12
+  Radacina:   2.0000000000  |  Pasi: 5
+  Radacina:   3.0000000000  |  Pasi: 6
+
+--- Metoda Olver ---
+  Radacina:   1.0000000000  |  Pasi: 8
+  Radacina:   2.0000000000  |  Pasi: 5
+  Radacina:   3.0000000000  |  Pasi: 13
+
+--- Comparatie Newton vs Olver (numar de pasi) ---
+  Radacina ~  1.000000: Newton =  12 pasi, Olver =   8 pasi  (x0 = -12.0000)
+  Radacina ~  2.000000: Newton =   4 pasi, Olver =   4 pasi  (x0 = 1.7487)
+  Radacina ~  3.000000: Newton =   5 pasi, Olver =   4 pasi  (x0 = 2.8342)
+
+Radacini distincte gasite (ambele metode combinate):
+  1.0000000000
+  2.0000000000
+  3.0000000000
+
+----------------------------------------------------------------------
+
+Polinom: P2(x) = (x-2/3)(x-1/7)(x+1)(x-3/2)
+Coeficienti: [42.0, -55.0, -42.0, 49.0, -6.0]
+Radacini exacte: [-1.0, 0.1428571429, 0.6666666667, 1.5]
+Intervalul [-R, R] = [-2.309524, 2.309524]
+
+--- Metoda Newton ---
+  Radacina:  -1.0000000000  |  Pasi: 8
+  Radacina:   0.1428571429  |  Pasi: 7
+  Radacina:   0.6666666667  |  Pasi: 5
+  Radacina:   1.5000000000  |  Pasi: 11
+
+--- Metoda Olver ---
+  Radacina:  -1.0000000000  |  Pasi: 6
+  Radacina:   0.1428571429  |  Pasi: 5
+  Radacina:   0.6666666667  |  Pasi: 6
+  Radacina:   1.5000000000  |  Pasi: 8
+
+--- Comparatie Newton vs Olver (numar de pasi) ---
+  Radacina ~ -1.000000: Newton =   8 pasi, Olver =   6 pasi  (x0 = -2.3095)
+  Radacina ~  0.142857: Newton =   5 pasi, Olver =   6 pasi  (x0 = -0.4062)
+  Radacina ~  0.666667: Newton =   5 pasi, Olver =   5 pasi  (x0 = 0.5223)
+  Radacina ~  1.500000: Newton =  32 pasi, Olver =  10 pasi  (x0 = 0.3598)
+
+Radacini distincte gasite (ambele metode combinate):
+  -1.0000000000
+  0.1428571429
+  0.6666666667
+  1.5000000000
+
+----------------------------------------------------------------------
+
+Polinom: P3(x) = (x-1)(x-1/2)(x-3)(x-1/4)
+Coeficienti: [8.0, -38.0, 49.0, -22.0, 3.0]
+Radacini exacte: [0.25, 0.5, 1.0, 3.0]
+Intervalul [-R, R] = [-7.125000, 7.125000]
+
+--- Metoda Newton ---
+  Radacina:   0.2500000000  |  Pasi: 14
+  Radacina:   0.5000000000  |  Pasi: 5
+  Radacina:   1.0000000000  |  Pasi: 7
+  Radacina:   3.0000000000  |  Pasi: 10
+
+--- Metoda Olver ---
+  Radacina:   0.2500000000  |  Pasi: 10
+  Radacina:   0.5000000000  |  Pasi: 4
+  Radacina:   1.0000000000  |  Pasi: 5
+  Radacina:   3.0000000000  |  Pasi: 7
+
+--- Comparatie Newton vs Olver (numar de pasi) ---
+  Radacina ~  0.250000: Newton =  14 pasi, Olver =  10 pasi  (x0 = -7.1250)
+  Radacina ~  0.500000: Newton =   4 pasi, Olver =   3 pasi  (x0 = 0.4655)
+  Radacina ~  1.000000: Newton =   5 pasi, Olver =   5 pasi  (x0 = 0.8951)
+  Radacina ~  3.000000: Newton =   5 pasi, Olver =   5 pasi  (x0 = 2.7569)
+
+Radacini distincte gasite (ambele metode combinate):
+  0.2500000000
+  0.5000000000
+  1.0000000000
+  3.0000000000
+
+----------------------------------------------------------------------
+
+Polinom: P4(x) = (x-1)^2*(x-2)^2 = x^4 - 6x^3 + 13x^2 - 12x + 4
+Coeficienti: [1.0, -6.0, 13.0, -12.0, 4.0]
+Radacini exacte: [1.0, 2.0]
+Intervalul [-R, R] = [-14.000000, 14.000000]
+
+--- Metoda Newton ---
+  Radacina:   0.9999990525  |  Pasi: 30
+  Radacina:   1.0000007501  |  Pasi: 16
+  Radacina:   1.9999991439  |  Pasi: 17
+  Radacina:   2.0000005552  |  Pasi: 19
+
+--- Metoda Olver ---
+  Radacina:   0.9999996843  |  Pasi: 22
+  Radacina:   1.9999994540  |  Pasi: 13
+  Radacina:   2.0000005757  |  Pasi: 28
+
+--- Comparatie Newton vs Olver (numar de pasi) ---
+  Radacina ~  0.999999: Newton =  30 pasi, Olver =  22 pasi  (x0 = -14.0000)
+  Radacina ~  1.000001: Newton =  16 pasi, Olver =  12 pasi  (x0 = 1.0553)
+  Radacina ~  1.999999: Newton =  17 pasi, Olver =  13 pasi  (x0 = 1.7588)
+  Radacina ~  2.000001: Newton =  16 pasi, Olver =  12 pasi  (x0 = 2.0402)
+
+Radacini distincte gasite (ambele metode combinate):
+  0.9999990525
+  1.0000007501
+  1.9999991439
+  2.0000005552
+
+----------------------------------------------------------------------
+
