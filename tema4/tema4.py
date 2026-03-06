@@ -1,4 +1,4 @@
-# 15 LLM
+# 35% LLM
 import math
 
 def rezolva_tema(index_fisier, p_precizie):
@@ -130,5 +130,7 @@ def rezolva_tema(index_fisier, p_precizie):
     else:
         print("4. Metoda Gauss-Seidel a divergent.") 
 
-# Rulare pentru sistemul 1 cu precizie 10^-8
-rezolva_tema(1, 8)
+# Rulare pentru toate cele 5 sisteme cu precizie 10^-8
+for i in range(1, 6):
+    rezolva_tema(i, 8)
+    print()
